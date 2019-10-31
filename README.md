@@ -1,19 +1,12 @@
 # tw_socher
----
-title: "twitter"
-author: "Gonzalo Barria - Daniel Alcatruz"
-date: "31-10-2019"
-output:
-  pdf_document: default
-  html_document: default
----
+
 
 ## Análisis de redes sociales: Extracción de datos de Twitter con R
 
 
 
-Instructores: Daniel Alcatruz, Administrador Público UDEC.
-              Gonzalo Barría, Magíster en Ciencia Política UC
+Instructores: - Daniel Alcatruz,  Administrador Público UDEC.
+              - Gonzalo Barría, Magíster en Ciencia Política UC
 
 El objetivo de este workshop es introducir los conceptos y funciones básicas en el lenguaje de programación R para la extracción y posterior análisis de datos obtenidos de la red social Twitter. Para esto se utilizará la interfaz de usuario llamda RStudio. Procuramos brindar también las habilidades básicas para realizar tareas estadpisticas en el uso del software de R.
 
