@@ -50,7 +50,7 @@ La gran diferencia está en que el primero recoge 16- 21 variables, mientra que 
 
 ### Autenticación en twitteR
 
-```{r, echo=FALSE, results='asis'}
+```{r}
 
 
 options(RCurlOptions = list( capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"), ssl.verifypeer = FALSE))

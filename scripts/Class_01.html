@@ -175,17 +175,26 @@ code span.ot { color: #007020; }
 <p>La gran diferencia está en que el primero recoge 16- 21 variables, mientra que el segundo 90 variables</p>
 <div id="autenticacion-en-twitter" class="section level3">
 <h3>Autenticación en twitteR</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">options</span>(<span class="dt">RCurlOptions =</span> <span class="kw">list</span>( <span class="dt">capath =</span> <span class="kw">system.file</span>(<span class="st">&quot;CurlSSL&quot;</span>, <span class="st">&quot;cacert.pem&quot;</span>, <span class="dt">package =</span> <span class="st">&quot;RCurl&quot;</span>), <span class="dt">ssl.verifypeer =</span> <span class="ot">FALSE</span>))</span>
+<span id="cb4-2"><a href="#cb4-2"></a>reqURL&lt;-<span class="st">&quot;https://api.twitter.com/oauth/request_token&quot;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>accessURL&lt;-<span class="st">&quot;https://api.twitter.com/oauth/access_token&quot;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>authURL&lt;-<span class="st">&quot;https://api.twitter.com/oauth/authorize&quot;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>consumerKey&lt;-<span class="st">&quot;clave&quot;</span> <span class="co">#clave que se da cuando se genera la app individual en Twitter</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>consumerSecret&lt;-<span class="st">&quot;clave&quot;</span> <span class="co">#Idem</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#setup_twitter_oauth(consumerKey, consumerSecret, access_token=NULL, access_secret=NULL)</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="co">#Bajar Tweets#</span></span></code></pre></div>
 </div>
 <div id="autenticacion-en-twitter-1" class="section level3">
 <h3>Autenticación en Twitter</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>consumerKey&lt;-<span class="st">&quot;clave&quot;</span> <span class="co">#clave que se da cuando se genera la app individual en Twitter</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>consumerSecret&lt;-<span class="st">&quot;clave&quot;</span> <span class="co">#Idem</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a></span>
-<span id="cb4-4"><a href="#cb4-4"></a>acces_token &lt;-<span class="st"> &quot;clave&quot;</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a></span>
-<span id="cb4-6"><a href="#cb4-6"></a>accest_secret &lt;-<span class="st"> &quot;clave&quot;</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="co">#create_token(app= &quot;JavierOpinante&quot;,consumer_key = consumerKey, consumer_secret = consumerSecret, access_token = acces_token, access_secret = accest_secret)</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>consumerKey&lt;-<span class="st">&quot;clave&quot;</span> <span class="co">#clave que se da cuando se genera la app individual en Twitter</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>consumerSecret&lt;-<span class="st">&quot;clave&quot;</span> <span class="co">#Idem</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a>acces_token &lt;-<span class="st"> &quot;clave&quot;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a>accest_secret &lt;-<span class="st"> &quot;clave&quot;</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="co">#create_token(app= &quot;nombredetuapp&quot;,consumer_key = consumerKey, consumer_secret = consumerSecret, access_token = acces_token, access_secret = accest_secret)</span></span></code></pre></div>
 </div>
 </div>
     </section>
